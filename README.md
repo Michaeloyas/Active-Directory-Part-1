@@ -11,7 +11,7 @@ This is the first part of a series of home lab projects on setting up Active Dir
 
 <br />
 Active Directory implementation chart:  <br/>
-<img src="https://i.imgur.com/3yTLVv7.png" height="30%" width="60%" alt="Active Directory implementation chart"/>
+<img src="https://i.imgur.com/3yTLVv7.png" height="40%" width="80%" alt="Active Directory implementation chart"/>
 <br />
 <br />
 
