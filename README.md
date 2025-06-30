@@ -10,8 +10,8 @@ This is the first part of a series of home lab projects on setting up Active Dir
 * Installation of the server 2019 and the Windows 11 OS on virtual Machines (VM).
 
 <br />
-Select the disk:  <br/>
-<img src="https://i.imgur.com/3yTLVv7.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Active Directory implementation chart:  <br/>
+<img src="https://i.imgur.com/3yTLVv7.png" height="30%" width="60%" alt="Active Directory implementation chart"/>
 <br />
 <br />
 
@@ -21,8 +21,8 @@ Briefly, VirtualBox is a type 2 hypervisor. This means that it is installed on a
 Alright, to download VirtualBox, click on this [link](https://www.virtualbox.org/wiki/Downloads).
 
 <br />
-Select the disk:  <br/>
-<img src="https://i.imgur.com/Jhcj0t7.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+VirtualBox download Steps:  <br/>
+<img src="https://i.imgur.com/Jhcj0t7.png" height="30%" width="60%" alt="VirtualBox download"/>
 <br />
 <br />
 
@@ -30,12 +30,24 @@ Click to Download the option for your OS, download the extension pack, and save 
 
 Once the download is completed, click on the file and follow the instructions in the Windows installer. Click “Next” until “Finish” to complete the installation. Next, click on the extension pack file to install it.
 
+<br />
+<img src="https://cdn-images-1.medium.com/max/1200/1*l1qBKOBKbBDafxlr5U_5lg.png" height="30%" width="60%" alt="screenshot of interface"/>
+<br />
+
 ## Download Microsoft Server 2019 ISO and Microsoft Windows 11 Operating System ISO
 To download the Microsoft Server 2019 ISO, click on this [link](https://www.microsoft.com/en-us/evalcenter/download-windows-server-2019) to download the 64-bit option.
 
 To download the Windows 11 ISO, click on this [link](https://www.microsoft.com/en-us/software-download/windows11). Scroll down to Windows 11 ISO option => select the option for 64-bit in the dropdown box and click “Download Now” => select the preferred language in the dropdown and click “Confirm.”
 
+<br />
+<img src="https://cdn-images-1.medium.com/max/1200/1*lk5e1E--f_7E9dk0oSLf-g.png" height="30%" width="60%" alt="screenshot of interface"/>
+<br />
+
 A link will be generated for you to download the 64-bit option.
+
+<br />
+<img src="https://cdn-images-1.medium.com/max/1200/1*P1mn4JPVjKgjg-t1V_iAtA.png" height="30%" width="60%" alt="screenshot of interface"/>
+<br />
 
 ## Installation of the server 2019 and the Windows 11 OS on Virtual Machines (VM)
 So far, we got the download part out of the way, and we are now ready to provision virtual machines and have the OSes installed on them to set the stage for the next fun part.
@@ -44,29 +56,64 @@ Open the VirtualBox you installed in the previous step and follow the steps belo
 
 1.  Click on the “New” option.
 
-    * **Name:** Primary-DC // Domain Controller (DC) because we will install an active directory software on the server. Primary because, in production, more than one DC is recommended for redundancy. You’re free to name it anything.
-    * **ISO Image:** Select the server 2019 you downloaded.
+<br />
+<img src="https://cdn-images-1.medium.com/max/1200/1*0v0oN704tceYseUPV7kJLw.png" height="30%" width="60%" alt="screenshot of interface"/>
+<br />
+
+* **Configure Virtual Machine Details**
+    * **Name:**
+        ~ Primary-DC. This will be our Domain Controller (DC) since we're installing Active Directory software on it. We're naming it "Primary" because, in a production environment, having more than one DC is recommended for redundancy. Feel free to choose any name you prefer.
+    * **ISO Image:**
+        ~ Select the Server 2019 ISO file that you previously downloaded.
     * Other fields will automatically be populated. Leave the “Skip unattended installation” box unchecked, then click “Next”.
+
 
 2.  Choose the credential (username and password) that you will use to log on to the server after boot up. Remember to check the “Guest Additions” box.
 
+<img src="https://cdn-images-1.medium.com/max/1200/1*8597DE4KuKSjs0kKFHP5Gg.png" height="30%" width="60%" alt="screenshot of interface"/>
+<br />
+
 3.  Allocate base memory and processor based on your host hardware resources (RAM and CPU). Remember to stay within the green area of the bar.
+
+<img src="https://cdn-images-1.medium.com/max/1200/1*QaEhYoZFKjQva2db9QUbNA.png" height="30%" width="60%" alt="screenshot of interface"/>
+<br />
 
 4.  Select the “Create Virtual Hard Disk Now” and allocate the disk size. I decided to use 50 GB.
 
+<img src="https://cdn-images-1.medium.com/max/1200/1*wLHqIcpICRrmwAH_fQSXSQ.png" height="30%" width="60%" alt="screenshot of interface"/>
+<br />
+
 5.  Check the summary to be sure everything is okay, then click “Finish.”
+
+<img src="https://cdn-images-1.medium.com/max/1200/1*ZjLYK7NPtao720JnBfm6Uw.png" height="30%" width="60%" alt="screenshot of interface"/>
+<br />
 
     It will take a while to load files and then display the screen below:
 
+<img src="https://cdn-images-1.medium.com/max/1200/1*2umEZtunujMWPNLV8gKMVg.jpeg" height="30%" width="60%" alt="screenshot of interface"/>
+<br />
+
 6.  Click next and select one of the options with “Desktop Experience” to enable Graphical User Interface (GUI) on the server. Otherwise, it will just be command-line.
 
+<img src="https://cdn-images-1.medium.com/max/1200/1*AN8Upttx1JDMC8zFkm8jnA.jpeg" height="30%" width="60%" alt="screenshot of interface"/>
+<br />
+
 7.  Click “Next” => accept license agreement => Next => Click “custom install”.
+
+<img src="https://cdn-images-1.medium.com/max/1200/1*x6QdRiX3PRIzTd2zB0flNw.jpeg" height="30%" width="60%" alt="screenshot of interface"/>
+<br />
 
 8.  Click next, and the server will start to install. After a while, it will boot into Windows eventually.
 
 9.  Set the credentials for the built-in administrator account.
 
+<img src="https://cdn-images-1.medium.com/max/1200/1*Z6ImwRepbfv_GZVGaVlNSQ.jpeg" height="30%" width="60%" alt="screenshot of interface"/>
+<br />
+
 10. Once you click “Finish,” it will boot up into the Windows GUI. Select “Input” => “Keyboard” => “Insert Ctrl-Alt-Del” to display the administrator and password field.
+
+<img src="https://cdn-images-1.medium.com/max/1200/1*Z865pDY-W0xZsKpLeN0cDg.png" height="30%" width="60%" alt="screenshot of interface"/>
+<br />
 
 **Your turn!** Follow the steps above to launch a virtual machine and the Windows 11 ISO you downloaded.
 
