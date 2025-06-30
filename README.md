@@ -1,13 +1,13 @@
-# Active Directory Domain Services Part 1: VirtualBox, Virtual Machine(VM), Server and Client Installation, and Configuration
+# Active Directory Domain Services Part 1: VirtualBox, Virtual Machine (VM), Server and Client Installation, and Configuration
 
 ## Introduction
 This is the first part of a series of home lab projects on setting up Active Directory Domain Services.
 
 **Key learning aspects:**
 
-* Downloading and installing VirtualBox and Extension.
+* VirtualBox and the Extension Pack download and installation.
 * Download Microsoft Server 2019 ISO and Microsoft Windows 11 Operating System ISO.
-* Installation of the server 2019 and the Windows 11 OS on virtual Machines (VM).
+* Installation of Windows Server 2019 and the Windows 11 OS on virtual Machines (VMs).
 
 <br />
 Active Directory implementation chart:  <br/>
@@ -22,7 +22,7 @@ Alright, to download VirtualBox, click on this [link](https://www.virtualbox.org
 
 <br />
 VirtualBox download Steps:  <br/>
-<img src="https://i.imgur.com/Jhcj0t7.png" height="30%" width="60%" alt="VirtualBox download"/>
+<img src="https://i.imgur.com/Jhcj0t7.png" height="40%" width="80%" alt="VirtualBox download"/>
 <br />
 <br />
 
@@ -31,7 +31,7 @@ Click to Download the option for your OS, download the extension pack, and save 
 Once the download is completed, click on the file and follow the instructions in the Windows installer. Click “Next” until “Finish” to complete the installation. Next, click on the extension pack file to install it.
 
 <br />
-<img src="https://cdn-images-1.medium.com/max/1200/1*l1qBKOBKbBDafxlr5U_5lg.png" height="30%" width="60%" alt="screenshot of interface"/>
+<img src="https://cdn-images-1.medium.com/max/1200/1*l1qBKOBKbBDafxlr5U_5lg.png" height="40%" width="80%" alt="screenshot of interface"/>
 <br />
 
 ## Download Microsoft Server 2019 ISO and Microsoft Windows 11 Operating System ISO
@@ -40,13 +40,13 @@ To download the Microsoft Server 2019 ISO, click on this [link](https://www.micr
 To download the Windows 11 ISO, click on this [link](https://www.microsoft.com/en-us/software-download/windows11). Scroll down to Windows 11 ISO option => select the option for 64-bit in the dropdown box and click “Download Now” => select the preferred language in the dropdown and click “Confirm.”
 
 <br />
-<img src="https://cdn-images-1.medium.com/max/1200/1*lk5e1E--f_7E9dk0oSLf-g.png" height="30%" width="60%" alt="screenshot of interface"/>
+<img src="https://cdn-images-1.medium.com/max/1200/1*lk5e1E--f_7E9dk0oSLf-g.png" height="40%" width="80%" alt="screenshot of interface"/>
 <br />
 
 A link will be generated for you to download the 64-bit option.
 
 <br />
-<img src="https://cdn-images-1.medium.com/max/1200/1*P1mn4JPVjKgjg-t1V_iAtA.png" height="30%" width="60%" alt="screenshot of interface"/>
+<img src="https://cdn-images-1.medium.com/max/1200/1*P1mn4JPVjKgjg-t1V_iAtA.png" height="40%" width="80%" alt="screenshot of interface"/>
 <br />
 
 ## Installation of the server 2019 and the Windows 11 OS on Virtual Machines (VM)
@@ -57,7 +57,7 @@ Open the VirtualBox you installed in the previous step and follow the steps belo
 1.  Click on the “New” option.
 
 <br />
-<img src="https://cdn-images-1.medium.com/max/1200/1*0v0oN704tceYseUPV7kJLw.png" height="30%" width="60%" alt="screenshot of interface"/>
+<img src="https://cdn-images-1.medium.com/max/1200/1*0v0oN704tceYseUPV7kJLw.png" height="40%" width="80%" alt="screenshot of interface"/>
 <br />
 
 * **Configure Virtual Machine Details**
@@ -70,27 +70,27 @@ Open the VirtualBox you installed in the previous step and follow the steps belo
 
 2.  Choose the credential (username and password) that you will use to log on to the server after boot up. Remember to check the “Guest Additions” box.
 
-<img src="https://cdn-images-1.medium.com/max/1200/1*8597DE4KuKSjs0kKFHP5Gg.png" height="30%" width="60%" alt="screenshot of interface"/>
+<img src="https://cdn-images-1.medium.com/max/1200/1*8597DE4KuKSjs0kKFHP5Gg.png" height="40%" width="80%" alt="screenshot of interface"/>
 <br />
 
 3.  Allocate base memory and processor based on your host hardware resources (RAM and CPU). Remember to stay within the green area of the bar.
 
-<img src="https://cdn-images-1.medium.com/max/1200/1*QaEhYoZFKjQva2db9QUbNA.png" height="30%" width="60%" alt="screenshot of interface"/>
+<img src="https://cdn-images-1.medium.com/max/1200/1*QaEhYoZFKjQva2db9QUbNA.png" height="40%" width="80%" alt="screenshot of interface"/>
 <br />
 
 4.  Select the “Create Virtual Hard Disk Now” and allocate the disk size. I decided to use 50 GB.
 
-<img src="https://cdn-images-1.medium.com/max/1200/1*wLHqIcpICRrmwAH_fQSXSQ.png" height="30%" width="60%" alt="screenshot of interface"/>
+<img src="https://cdn-images-1.medium.com/max/1200/1*wLHqIcpICRrmwAH_fQSXSQ.png" height="40%" width="80%" alt="screenshot of interface"/>
 <br />
 
 5.  Check the summary to be sure everything is okay, then click “Finish.”
 
-<img src="https://cdn-images-1.medium.com/max/1200/1*ZjLYK7NPtao720JnBfm6Uw.png" height="30%" width="60%" alt="screenshot of interface"/>
+<img src="https://cdn-images-1.medium.com/max/1200/1*ZjLYK7NPtao720JnBfm6Uw.png" height="40%" width="80%" alt="screenshot of interface"/>
 <br />
 
     It will take a while to load files and then display the screen below:
 
-<img src="https://cdn-images-1.medium.com/max/1200/1*2umEZtunujMWPNLV8gKMVg.jpeg" height="30%" width="60%" alt="screenshot of interface"/>
+<img src="https://cdn-images-1.medium.com/max/1200/1*2umEZtunujMWPNLV8gKMVg.jpeg" height="40%" width="80%" alt="screenshot of interface"/>
 <br />
 
 6.  Click next and select one of the options with “Desktop Experience” to enable Graphical User Interface (GUI) on the server. Otherwise, it will just be command-line.
