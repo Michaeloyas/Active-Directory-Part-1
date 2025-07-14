@@ -1,24 +1,20 @@
-# Active Directory Domain Services Part 1: VirtualBox, Virtual Machine (VM), Server and Client Installation, and Configuration
+# Active Directory Domain Services Part 1: VirtualBox, Virtual Machine (VM), Server 2019 and Windows 11 Installation, and Configuration
 
 ## Introduction
 This is the first part of a series of home lab projects on setting up Active Directory Domain Services.
 
 **Key learning aspects:**
 
-* VirtualBox and the Extension Pack download and installation.
-* Download Microsoft Server 2019 ISO and Microsoft Windows 11 Operating System ISO.
-* Installation of Windows Server 2019 and the Windows 11 OS on virtual Machines (VMs).
+* Virtualization: Hypervisor (Oracle VirtualBox) download and installation.
+* Software Installation: Microsoft Server 2019 ISO and Microsoft Windows 11 Operating System ISO mounting and installation on virtual machines.
 
-<br />
-Active Directory implementation chart:  <br/>
-<img src="https://i.imgur.com/3yTLVv7.png" height="40%" width="80%" alt="Active Directory implementation chart"/>
-<br />
-<br />
+![Active Directory implementation chart](https://i.imgur.com/3yTLVv7.png)
 
-## Downloading and installing VirtualBox and Extension
+
+## Downloading and installing VirtualBox and Extension Pack
 Briefly, VirtualBox is a type 2 hypervisor. This means that it is installed on a host OS (unlike type 1, which is installed on bare metal) and enables you to spin up multiple environments (think of virtual machines) with different OSes (often called guest OSes).
 
-Alright, to download VirtualBox, click on this [link](https://www.virtualbox.org/wiki/Downloads).
+Here is the download [link](https://www.virtualbox.org/wiki/Downloads).
 
 <br />
 VirtualBox download Steps:  <br/>
@@ -26,7 +22,7 @@ VirtualBox download Steps:  <br/>
 <br />
 <br />
 
-Click to Download the option for your OS, download the extension pack, and save the download to a folder. We will be using the Windows OS for this exercise.
+I downloaded the option for Windows OS and the extension pack, and saved the download to a folder.
 
 Once the download is completed, click on the file and follow the instructions in the Windows installer. Click “Next” until “Finish” to complete the installation. Next, click on the extension pack file to install it.
 
@@ -37,7 +33,7 @@ Once the download is completed, click on the file and follow the instructions in
 ## Download Microsoft Server 2019 ISO and Microsoft Windows 11 Operating System ISO
 To download the Microsoft Server 2019 ISO, click on this [link](https://www.microsoft.com/en-us/evalcenter/download-windows-server-2019) to download the 64-bit option.
 
-To download the Windows 11 ISO, click on this [link](https://www.microsoft.com/en-us/software-download/windows11). Scroll down to Windows 11 ISO option => select the option for 64-bit in the dropdown box and click “Download Now” => select the preferred language in the dropdown and click “Confirm.”
+To download the Windows 11 ISO, click on this [link](https://www.microsoft.com/en-us/software-download/windows11). Scroll down to Windows 11 ISO option => select the option for 64-bit processor in the dropdown box and click “Download Now” => select the preferred language in the dropdown and click “Confirm.”
 
 <br />
 <img src="https://cdn-images-1.medium.com/max/1200/1*lk5e1E--f_7E9dk0oSLf-g.png" height="40%" width="80%" alt="screenshot of interface"/>
