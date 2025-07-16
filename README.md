@@ -8,8 +8,10 @@ This is the first part of a series of home lab projects on setting up Active Dir
 * Virtualization: Hypervisor (Oracle VirtualBox) download and installation.
 * Software Installation: Microsoft Server 2019 ISO and Microsoft Windows 11 Operating System ISO mounting and installation on virtual machines.
 
-![Active Directory implementation chart](https://i.imgur.com/3yTLVv7.png)
-
+<br />
+VirtualBox download Steps:  <br/>
+<img src="https://i.imgur.com/3yTLVv7.png" width="80%" alt="VirtualBox download"/>
+<br />
 
 ## Downloading and installing VirtualBox and Extension Pack
 Briefly, VirtualBox is a type 2 hypervisor. This means that it is installed on a host OS (unlike type 1, which is installed on bare metal) and enables you to spin up multiple environments (think of virtual machines) with different OSes (often called guest OSes).
@@ -18,8 +20,7 @@ Here is the download [link](https://www.virtualbox.org/wiki/Downloads).
 
 <br />
 VirtualBox download Steps:  <br/>
-<img src="https://i.imgur.com/Jhcj0t7.png" height="40%" width="80%" alt="VirtualBox download"/>
-<br />
+<img src="https://i.imgur.com/Jhcj0t7.png" width="80%" alt="VirtualBox download"/>
 <br />
 
 I downloaded the option for Windows OS and the extension pack, and saved the download to a folder.
@@ -29,6 +30,7 @@ Once the download is completed, click on the file and follow the instructions in
 <br />
 <img src="https://cdn-images-1.medium.com/max/1200/1*l1qBKOBKbBDafxlr5U_5lg.png" height="40%" width="80%" alt="screenshot of interface"/>
 <br />
+
 
 ## Download Microsoft Server 2019 ISO and Microsoft Windows 11 Operating System ISO
 To download the Microsoft Server 2019 ISO, click on this [link](https://www.microsoft.com/en-us/evalcenter/download-windows-server-2019) to download the 64-bit option.
