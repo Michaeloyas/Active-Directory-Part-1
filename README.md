@@ -8,8 +8,7 @@ This is the first part of a series of home lab projects on setting up Active Dir
 * Virtualization: Hypervisor (Oracle VirtualBox) download and installation.
 * Software Installation: Microsoft Server 2019 ISO and Microsoft Windows 11 Operating System ISO mounting and installation on virtual machines.
 
-<br />
-VirtualBox download Steps:  <br/>
+<br/>
 <img src="https://i.imgur.com/3yTLVv7.png" width="80%" alt="VirtualBox download"/>
 <br />
 
